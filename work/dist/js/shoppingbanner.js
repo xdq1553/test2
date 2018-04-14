@@ -1,6 +1,6 @@
 //轮播图
 define(function(){
-    function banner(){
+    function shoppingbanner(){
         var aLis = $("#banner").find(".banner_1").find("ol").find("li");
         var aPics = $("#banner").find("ul").find("li");
 
@@ -27,7 +27,7 @@ define(function(){
 
 //加载数据
          $.ajax({
-            url: "data/data.json",
+            url: "../data/data_1.json",
             success:function(res){
                 // console.log(res);
                 for(var i = 0; i < res.length;i++){
@@ -35,16 +35,11 @@ define(function(){
                     $("#banner").find("ul").find("li").eq(i).find("a").css({
                         // "display" : "none",
                         // "position":"absolute",
-                        "height": "600px",
+                        "height": "408px",
                         "background":`url(` + res[i].img + `) no-repeat center center`,
                         "backgroundSize" : "100% 100%",
 
                     });
-                    // $("#banner").find("ul").find("li").eq(0).find("a").css("display","block");
-                    // $("#banner").find(".banner_1").find("ul").find(".active").css("display","block");
-                    // $("#banner").find(".banner_1").find("ul").find(".active").css("zIndex","222");
-
-                    // $("#banner").find("ol").find("li").css{}
                     $("#banner").find("ol").find(".point").css({
                         "borderRadius":"3px",
                         "width":"54px",
@@ -132,6 +127,6 @@ define(function(){
 
 }
     return {
-        banner : banner
+        shoppingbanner : shoppingbanner
     }
 })

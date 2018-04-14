@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*************************** css reset **************************/
-body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dd, input, textarea, button, select {
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dd, tr, th, input, textarea, button, select {
   padding: 0;
   margin: 0; }
 
@@ -25,7 +25,8 @@ input[type="button"], input[type="submit"], input[type="file"], input[type="rese
   border: none; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  font-family: "微软雅黑"; }
 
 /************************* common **************************/
 .cl:after {
@@ -60,4 +61,24 @@ a {
 
 .icon_1 {
   background: url(../images/icon/icon_3.png) 0 0 no-repeat;
+  float: left; }
+
+.icon_2 {
+  background: url(../images/icon/icon_4.png) 0 0 no-repeat;
+  float: left; }
+
+.icon_5 {
+  background: url(../images/icon/icon_5.png) 0 0 no-repeat;
+  float: left; }
+
+.icon_6 {
+  background: url(../images/icon/icon_4.png) 0 0 no-repeat;
+  float: left; }
+
+.icon_8 {
+  background: url(../images/icon/icon_8.png) 0 0 no-repeat;
+  float: left; }
+
+.icon_9 {
+  background: url(../images/icon/icon_9.png) 0 0 no-repeat;
   float: left; }
